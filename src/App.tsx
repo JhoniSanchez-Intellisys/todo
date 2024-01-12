@@ -22,8 +22,7 @@ const App = () => {
   return (
     <div><List
     name = {"Listado"}
-    productos = {productos}
-    
+    productos = {productos}    
     /></div>
   )
 }

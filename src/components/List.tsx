@@ -33,12 +33,14 @@ const obj:IPost = {
   };
 
 
+
   return (
     <div>
       <h2>{name}</h2>
       <h6>Cantidad de elemetos {post?.length}</h6>
       <h4>{productos?.map((el)=> (<div>{el.nombre}, {el.precio}</div>))}</h4>
-      <input type="text" onChange={(e)=>(setInput(e.target.value))} value={input} /> <button onClick={()=>{filters()}}>Anadir</button>
+      <input type="text" onChange={(e)=>(setInput(e.target.value))} value={input}/>
+      <button onClick={()=>{filters()}}>Anadir</button>
       {post &&
         post.map((el) => (
           <button onClick={() => filter(el.id)} key={el.id}>
